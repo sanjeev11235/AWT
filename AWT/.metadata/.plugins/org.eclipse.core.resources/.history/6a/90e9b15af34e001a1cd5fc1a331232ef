@@ -1,0 +1,15 @@
+package com.example;
+
+import java.awt.Frame;
+
+public class DemoAwt2 extends Frame {
+
+	public static void main(String[] args) {
+		System.out.println("start");
+		DemoAwt2 d= new DemoAwt2();
+		System.out.println(d);
+		d.setSize(300, 100);
+		d.setVisible(true);
+		System.out.println("end");
+	}
+}

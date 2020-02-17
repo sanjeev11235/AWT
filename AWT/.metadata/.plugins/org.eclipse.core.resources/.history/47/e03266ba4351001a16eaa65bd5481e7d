@@ -1,0 +1,15 @@
+package com.example;
+
+import java.awt.FlowLayout;
+import java.awt.Frame;
+
+public class DemoAwt6r  extends Frame{
+
+	DemoAwt6r(){
+		this.setSize(600, 200);
+		this.setVisible(true);
+		this.setLayout(new FlowLayout());
+		this.setLocation(100, 50);
+	}
+	
+}

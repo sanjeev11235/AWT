@@ -1,0 +1,13 @@
+package com.example;
+
+import java.awt.Frame;
+
+public class DemoAwt3 {
+
+	public static void main(String[] args) {
+		Frame f= new Frame();
+		f.setSize(500, 200);
+		f.setVisible(true);
+		f.setLocation(50, 100);
+	}
+}

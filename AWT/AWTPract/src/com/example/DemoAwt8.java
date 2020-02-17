@@ -1,0 +1,45 @@
+package com.example;
+
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+
+import com.sun.xml.internal.ws.org.objectweb.asm.Label;
+
+public class DemoAwt8 extends Frame {
+
+	Button b1;
+	Button b2;
+	
+	public DemoAwt8() {
+		setSize(600, 200);
+		setVisible(true);
+		setLayout(new FlowLayout());
+		
+		b1 = new Button();
+		b2 = new Button("Signup");
+		b1.setLabel("lebel setted by method");
+		b2.setLabel("signup label changed");
+		
+		String lebel = b1.getLabel();
+		System.out.println(lebel);
+		
+		b1.setPreferredSize(new Dimension(200,50));
+		b2.setPreferredSize(new Dimension(250,100));
+		b1.setBackground(Color.yellow);
+		b2.setForeground(Color.blue);
+		
+//		b1.setEnabled(false);
+//		b1.setVisible(false);
+//		b1.show(false);
+		
+		add(b1);
+		add(b2);
+	}
+
+	public static void main(String[] args) {
+		DemoAwt8 d = new DemoAwt8();
+	}
+}

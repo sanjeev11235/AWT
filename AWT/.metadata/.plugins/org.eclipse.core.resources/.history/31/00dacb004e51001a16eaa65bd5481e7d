@@ -1,0 +1,23 @@
+package com.example;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class DemoAwt9r implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+
+		System.out.println("Button Clicked");
+		Runtime runtime = Runtime.getRuntime();
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+        System.out.print("Enter No. of Seconds after which You want your Computer to Shutdown :");
+        long a=Long.parseLong(br.readLine());
+		
+        Process proc = runtime.exec("shutdown -s -t " +a);
+		
+        System.exit(0);
+	}
+
+}

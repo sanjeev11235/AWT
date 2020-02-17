@@ -1,0 +1,60 @@
+package com.example;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.CardLayout;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.HeadlessException;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.GroupLayout;
+import javax.swing.OverlayLayout;
+import javax.swing.SpringLayout;
+
+public class Assignment2 extends Frame implements ActionListener{
+	
+	private TextField t1, t2, t3;
+	private Button b1, b2, b3, b4, b5;
+
+	public Assignment2() throws HeadlessException {
+		setSize(600, 300);
+		setVisible(true);
+		setLocation(100, 100);
+		setLayout(new GridLayout(2,5));
+		
+		t1 = new TextField();
+		t2 = new TextField();
+		t3 = new TextField();
+		
+		b1 = new Button("+");
+		b1.setBounds(150, 150, 100, 50);
+		b2 = new Button("-");
+		b2.setSize(100,50);
+		b3 = new Button("*");
+		b3.setSize(100,50);
+		b4 = new Button("/");
+		b4.setSize(100,50);
+		b5 = new Button("reset");
+		b5.setSize(100,50);
+		
+		add(t1);add(t2);add(t3);
+		add(b1);add(b2);add(b3);add(b4);add(b5);
+		
+	}
+
+	public static void main(String[] args) {
+		Assignment2 a= new Assignment2();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}

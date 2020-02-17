@@ -1,0 +1,11 @@
+package com.example;
+
+import java.awt.Frame;
+
+public class DemoAwt6r  extends Frame{
+
+	DemoAwt6r(){
+		
+	}
+	
+}

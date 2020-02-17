@@ -1,0 +1,36 @@
+package com.example;
+
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class DemoAwt10 extends Frame implements ActionListener {
+
+	Button b;
+
+	public DemoAwt10() {
+		setSize(600, 200);
+		setVisible(true);
+		setLayout(new FlowLayout());
+		setLocation(100, 50);
+		setBackground(java.awt.Color.blue);
+		b = new Button("CLick");
+		b.addActionListener(new DemoAwt10());
+		b.setBackground(Color.red);
+		add(b);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("Clicked DmeoAwt10");
+	}
+
+	public static void main(String[] args) {
+		DemoAwt10 d = new DemoAwt10();
+	}
+
+}

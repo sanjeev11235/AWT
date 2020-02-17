@@ -1,0 +1,19 @@
+package com.example;
+
+import java.awt.Frame;
+import java.awt.HeadlessException;
+
+public class Assignment1  extends Frame{
+
+	public Assignment1(){
+
+		setTitle("Assignment1");
+		setVisible(true);
+		setSize(600, 200);
+		setLocation(50, 50);
+	}
+
+	public static void main(String[] args) {
+		Assignment1 a= new Assignment1();
+	}
+}

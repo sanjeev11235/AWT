@@ -1,0 +1,31 @@
+package com.example;
+
+import java.awt.Button;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.HeadlessException;
+import java.awt.TextField;
+
+public class Assignment1  extends Frame{
+
+	private TextField tf;
+	private TextField tf2;
+	private Button swap;
+	public Assignment1(){
+
+		setTitle("Assignment1");
+		setVisible(true);
+		setSize(600, 200);
+		setLocation(50, 50);
+		setLayout(new FlowLayout());
+		
+		tf = new TextField(10);
+		tf2 = new TextField(10);
+		
+		swap = new Button();
+	}
+
+	public static void main(String[] args) {
+		Assignment1 a= new Assignment1();
+	}
+}
