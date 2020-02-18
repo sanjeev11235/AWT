@@ -1,0 +1,48 @@
+package com.example;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.Panel;
+
+public class DemoAwt12 extends Frame {
+
+	private Panel east;
+	private Panel west;
+	private Panel north;
+	private Panel south;
+	private Panel center;
+	
+	public DemoAwt12() {
+		setSize(600, 200);
+		setVisible(true);
+		setLayout(new BorderLayout());
+		
+		east = new Panel();
+		west = new Panel();
+		north = new Panel();
+		south = new Panel();
+		center = new Panel();
+		
+		east.setBackground(Color.blue);
+		west.setBackground(Color.yellow);
+		north.setBackground(Color.green);
+		south.setBackground(Color.pink);
+		center.setBackground(Color.red);
+		
+		add(east, BorderLayout.EAST);
+		add(west, BorderLayout.WEST);
+		add(north, BorderLayout.NORTH);
+		add(south, BorderLayout.SOUTH);
+		add(center, BorderLayout.CENTER);
+		
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		DemoAwt12 d = new DemoAwt12();
+	}
+	
+}

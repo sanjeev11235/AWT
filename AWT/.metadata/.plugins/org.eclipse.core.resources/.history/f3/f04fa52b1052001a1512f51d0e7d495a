@@ -1,0 +1,17 @@
+package com.example;
+
+import java.awt.Frame;
+
+public class DemoAwt12 extends Frame {
+
+	public DemoAwt12() {
+		setSize(600, 200);
+		setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		DemoAwt12 d = new DemoAwt12();
+	}
+	
+}

@@ -1,0 +1,21 @@
+package com.example;
+
+import java.awt.Frame;
+import java.awt.HeadlessException;
+
+public class DemoAwt15  extends Frame{
+
+	public DemoAwt15() {
+
+		setSize(600, 200);
+		setLocation(200, 300);
+		setVisible(true);
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		DemoAwt15 d =new DemoAwt15();
+	}
+}

@@ -1,0 +1,27 @@
+package com.example;
+
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.HeadlessException;
+
+public class DemoAwt14 extends Frame{
+
+	public DemoAwt14() {
+
+		setSize(600, 200);
+		setLocation(200, 200);
+		setVisible(true);
+		setLayout(new GridLayout());
+		
+		add(new Button("Hello"));
+		add(new Button("Hi"));
+		add(new Button("Bye"));
+		
+	}
+
+	public static void main(String[] args) {
+		DemoAwt14 d= new DemoAwt14();
+	}
+	
+}
